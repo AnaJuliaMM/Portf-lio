@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header img.photo{
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+}
+.header h1.title{
+    text-align: center;
+    font-family: 'Neue Machina';
+}
