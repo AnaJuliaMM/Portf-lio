@@ -17,6 +17,40 @@ body{
     border-radius: 1rem;
 
 }
+
+.main::before,
+.main::after {
+    content: '';
+    background-image: url('../img/backgroundTop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 140vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: .75;
+}
+
+.main::after {
+    background-image: url('../img/backgroundBottom.png');
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+   
+}
+
+
+
+
+
+
+
+/*
 .main::before, 
 .main::after{
     content: '';
@@ -29,7 +63,7 @@ body{
     left: 0;
     width: 140vw;
     height: 100vh;
-    z-index: -1; /*Trazendo para trás do main*/
+    z-index: -1; /*Trazendo para trás do main
 }
 .main::after{
     background-image: url(/Assets/img/backgroundBottom.svg);
@@ -40,6 +74,7 @@ body{
     z-index: -1; 
 }
 
+*/
 @media only screen and (min-width: 768px) {
     .main{
         max-width: 1024px;
